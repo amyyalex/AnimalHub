@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animal Hub</title>
+
+	<!--custom style css-->
+	<link rel="stylesheet" href="./style.css">
+
+	<!--Font awesome style-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--header-->
+    <div class="header">
+		<a href="#" class="logo"> Animal<span>Hub</span> </a>
+
+		<nav class="navbar">
+	        <a href="#home">Home</a>
+	        <a href="#about">About</a>
+	        <a href="#causes">Cause</a>
+	        <a href="#contact">Contact</a>
+	    </nav>
+
+	    <!--icons-->
+	    <div class="icons">
+	        <div class="fas fa-bars" id="menu-btn"></div>
+	        <div class="fas fa-donate" id="donate-btn"></div>
+	    </div>
+
+	   <!--modal-->
+	    <div class="modal">
+	    	<div class="modal-content">
+	    		<div class="modal-header">
+	    			<span id="close-btn">&times;</span>
+	    		    <h3>DONATION</h3>
+	    		</div>
+	    		<div class="modal-body">
+	    			<form id="form">
+	    				<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+						<div class="form-group">
+							<label for="cause">Cause</label>
+							<select name="cause" id="cause" required>
+							    <option value="">--SELECT--</option>
+							    <option>African Wild Dog Conservancy</option>
+							    <option>Animal Protection and Rescue League </option>
+							    <option>The Conservation Fund </option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="image">Image</label>
+							<input type="file" id="image" name="image" accept="image/*" required>
+						</div>
+						<div class="form-group">
+							<label for="amount">Amount</label>
+							<input type="amount" id="amount" name="amount" required>	
+						</div>
+						<div class="form-group">
+							<label>Payment Method</label>
+							<div>
+								<label for="crypto" class="radio-inline">
+									<input type="radio" name="payment" id="crypto" value="crypto"> crypto
+								</label>
+								<label for="transfer" class="radio-inline">
+									<input type="radio" name="payment" id="transfer" value="bank transfer"> bank transfer
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="externalLink">External Link:</label>
+							<input type="text" id="externalLink" name="externalLink" required>
+						</div>
+						<div class="form-group">
+							<button class="btn" id="submit-btn" type="submit">SUBMIT</button>
+						</div>
+	    			</form>
+	    		</div>
+	    	</div>    	
+	    </div>
+    </div>
+
+   <!--end of header section-->
+
+   <!--start of home section-->
+
+    <section class="home" id="home">
+    	<div class="banner-content">
+    		<span>Hello, hub geng</span> 
+    	    <h1>Welcome to the hub! </h1>
+    	    <h2>Giving to the animal world...</h2>
+            <div class="click-button">
+		 	    <a href="#causes"><span></span>See More</a>
+		    </div>	
+        </div>      
+    </section>
+
+    <!--end of home section-->
+
+    <!--start of about section-->
+
+<section class="about" id="about">
+    <div class="about-text">
+      <i class="fas fa-paw"> About Us </i>
+    </div>
+    <div class="about-container">
+	    <div class="image">
+	    	<div class="image-box">
+	    		<img src="images/Group 3.png" alt="">
+	    	</div>
+	    </div>
+
+	    <div class="about-content">
+	        <h3>Care they need, <span>Love</span> they deserve</h3>
+	        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sint, dolore perspiciatis iure consequuntur eligendi quaerat vitae shaikh anas.Ut posuere, enim vitae imperdiet eleifend, ante est ultrices quam, vitae blandit erat dolor a felis. Sed commodo, lectus nec posuere euismod, eros orci sagittis est, ut dignissim purus libero id urna.</p>
+	        <a href="#" class="btn">Read More</a>
+	    </div>
+
+    </div>
+    
+</section>
+ <!--end of about section-->
+
+ <!--start of cause section-->
+<section class="cause" id="causes">
+
+    <div class="cause-text">
+      <i class="fas fa-paw"> Our Causes </i>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/society-1.jpg" alt="">
+            </div>
+            <div class="cause-content">
+                <h3>African Wild Dog Conservancy</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <a href="#" class="cause-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/society-2.jpg" alt="">
+            </div>
+            <div class="cause-content">
+                <h3>Animal Protection and Rescue League</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <a href="#" class="cause-btn">Read More</a>
+            </div>
+        </div>
+
+         <div class="box">
+            
+            <div class="image">
+                <img src="images/society-3.png" alt="">
+            </div>
+            <div class="cause-content">
+                <h3>The Conservation Fund</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <a href="#" class="cause-btn">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/society-1.jpg" alt="">
+            </div>
+            <div class="cause-content">
+                <h3>African Wild Dog Conservancy</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <a href="#" class="cause-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/society-1.jpg" alt="">
+            </div>
+            <div class="cause-content">
+                <h3>African Wild Dog Conservancy</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <a href="#" class="cause-btn">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/society-1.jpg" alt="">
+            </div>
+            <div class="cause-content">
+                <h3>African Wild Dog Conservancy</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <a href="#" class="cause-btn"> Read More</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--end of cause section-->
+
+<!--start of help section-->
+
+<section class="help">
+
+	<div class="help-text">
+		<h1>Waiting for your help</h1>
+		<p>We will help the animals for their wellness and care or requirements by your donations.</p>
+		<button href="#" class="btn"> <i class="fas fa-heart"></i> Donate now</button>
+	</div>
+	
+</section>
+
+<!--end of help section-->
+
+<!--start of contact section-->
+<section class="contact" id="contact">
+
+	<div class="contact-text">
+		<i class="fas fa-paw"> Get In Touch </i>
+	</div>
+	<div class="container">
+		<h2>Send a Message</h2>
+			<div class="row100">
+				<div class="col">
+					<div class="input-box">
+						<input type="text" name="" required>
+						<span class="text"> First Name</span>
+						<span class="line"></span>
+				    </div>
+				</div>
+				<div class="col">
+					<div class="input-box">
+						<input type="text" name="" required>
+						<span class="text"> Last Name</span>
+						<span class="line"></span>
+				    </div>
+				</div>
+			</div>
+			<div class="row100">
+				<div class="col">
+					<div class="input-box">
+						<input type="email" name="" required>
+						<span class="text"> Email </span>
+						<span class="line"></span>
+				    </div>
+				</div>
+				<div class="col">
+					<div class="input-box">
+						<input type="text" name="" required>
+						<span class="text"> Mobile</span>
+						<span class="line"></span>
+				    </div>
+				</div>
+			</div>
+			<div class="row100">
+				<div class="col">
+					<div class="input-box textarea">
+						<textarea required="required"></textarea> 
+						<span class="text"> Write your message here...</span>
+						<span class="line"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row100">
+				<div class="col">	
+					<input type="submit" value="Send">
+				</div>	
+			</div>
+	
+	</div>
+	
+</section>
+
+<!--end of contact section-->
+
+<!--start of footer section-->
+
+<footer>
+
+	<ul class="social-icons">
+		<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+		<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		<li><a href="#"><i class="fab fa-facebook"></i></a></a></li>
+	</ul>
+	<ul class="menu">
+		<li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Causes</a></li>
+        <li><a href="#contact">Contact</a></li>
+	</ul>
+	<p>Copyright &copy; Animal Hub </p>
+</footer>
+<!--end of footer section-->
+
+<div id="donations">
+    	<button id="back-btn">&laquo; Back</button>
+
+    	<h1 id="cause-title"></h1>
+
+    	<table border="1">
+    		<thead>
+    			<tr>
+				  <th>NAME</th>
+				  <th>CAUSE</th>
+				  <th>AMOUNT</th>
+				  <th>PAYMENT METHOD</th>
+				  <th>IMAGE</th>
+				  <th>EXTERNAL LINK</th>
+				</tr>
+    		</thead>
+    		<tbody id="donations-table"></tbody>
+    	</table>
+    </div>
+
+
+
+	<script src="./index.js" defer></script>
+</body>
+</html>
